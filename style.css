@@ -1,32 +1,27 @@
-*,
-*::before,
-*::after {
-    transition: all .1s ease-in;
+body {
+    margin: 0px;
+    padding: 0px;
     font-family:  “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-            box-sizing: border-box;
 }
 
 main {
     width: 100%;
-    height: 900px;
+    height: 770px;
     background-color: #f1f1f1;
 }
 
 input {
     display: inline-block;
     width: 85%;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: bold;
-    padding-left: 150px;
-    padding-top: 80px;
+    padding-left: 160px;
+    padding-top: 40px;
     background-color:  #f1f1f1;
     border: none;
     color: #ec5a62;
 }
-input:-moz-placeholder {
+input::-webkit-input-placeholder {
     color: #c4c4c4 !important;
 }
 
@@ -36,6 +31,14 @@ input:-moz-placeholder {
     height: 80px;
     background: transparent url(./img/loop.svg);
     border: none;  
+    position: absolute;
+    right: 11%;
+    top:   8%;
+}
+
+button:hover {
+    zoom: 1.1;
+    transition: all .1s ease-in;
 }
 
 input:focus {
@@ -45,16 +48,18 @@ input:focus {
 .blog {
     width: 1400px;
     height: 500px;
-    margin-top: 90px;
-    margin-left: 110px;
+    margin-top: 40px;
+    margin-left: 120px;
 }
 
 li {
     display: list-item;
     list-style: none;
-    width: 315px;
+    width: 355px;
     height: 75px;
     background-color: #ebebed;
+    font-size: 12px;
+    border-radius: 5px;
 }
 
 li:not(:last-child) {
@@ -62,27 +67,37 @@ li:not(:last-child) {
 }
 
 li:hover {
+    transition: all .1s ease-in;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #e4e4e6;
     
 }
 
 a:hover {
+    transition: all .1s ease-in;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
      color: #ec5a62;
  }
  
 a {
-    color: #c4c4c4;
+    color: #aaaaac;
 }
 .lop {
    display: inline-block;
-   width: 33%;
+   width: 29.5%;
 }
 
 h2 {
     margin-left: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     color: #c4c4c4;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 h3 {
@@ -94,7 +109,7 @@ h3 {
 img {
     display: inline-block;
     width: 50px;
-    margin: 0 10px 0 0;
+    margin: 10px;
     vertical-align: middle;
 }
 .circle {
